@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Póster de la película -->
+    <ImageView
+        android:id="@+id/imageViewPoster"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="movie_poster" />
+
+    <!-- Contenedor de información -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Título de la película -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Año de la película -->
+        <TextView
+            android:id="@+id/textViewYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="4dp" />
+    </LinearLayout>
+</LinearLayout>
